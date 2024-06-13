@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinChanKim</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    #wrap {
+        position: relative;
+        width: 100%;
+        height: 900px;
+        z-index: '999';
+        text-align: center;
+    }
+    body  {
+        font-family: "Pretendard Variable", Pretendard;
+        width: 100%;
+    }
+    .clear {
+        clear: both;
+    } 
+    header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 135px;
+        background-color: black;
+        text-align: center;
+        z-index: 1000;
+    }
+    header .logo{
+        position: absolute;
+        display: flex;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 200px;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+    nav {
+        position : absolute;
+        top: 63%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    nav ul {
+        list-style-type: none;
+    }
+    nav li {
+    font-weight: 100;
+        display: inline-block;
+        color: white;
+        padding: 15px;
+    }
+    section {
+        position:relative;
+        width: 100%;
+        height: 900px;
+        margin-top: 130px;
+    }
+    .thumbnail_box {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .thumbnail {
+        position: relative;
+        display: inline-block;
+        width: 1000px;
+        height: 230px;
+        border-radius: 1.4rem;
+        margin: 0 20px 10px 20px;
+        transition: 1s ease;
+        box-shadow: 10px 10px 8px rgba(67, 67, 67, 0.3);
+    }
+    .thumbnail p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgb(199, 199, 199);
+        font-size: 1.3rem;
+    }
+    .t1 {
+        background-image: url(./img/e_1.png);
+        animation: fadeIn 2s forwards;
+    }
+    .t1:hover {
+        background-image: url(./img/e_2.png);
+    }
+    .t2 {
+        background-image: url(./img/r_1.png);
+        animation: fadeIn 2s forwards;
+        animation-delay: 1s;
+        opacity: 0;
+    }
+    .t2:hover {
+        background-image: url(./img/r_2.png);
+    }
+    .t3 {
+        background-image: url(./img/h_1.png);
+        animation: fadeIn 2s forwards;
+        animation-delay: 2s;
+        opacity: 0;
+    }
+    .t3:hover {
+        background-image: url(./img/h_2.png);
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    footer p {
+        color: gray;
+        padding: 10px;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+        }
+</style>
+</head>
+<body> 
+    <div id="wrap">
+    <header>
+        <div class="logo"><a href='index.html'><img src='./img/logo.png' width='200'></a></div>
+        <nav>
+            <ul>
+                <a href='./intro.html'><li>Intro</li></a>
+                <a href='./style.html'><li>style</li></a>
+                <a href='./Doodle.html'><li>Doodle</li></a>
+                <a href='./Anatomy.html'><li>Anatomy</li></a>
+                <a href='./Inspire.html'><li>Inspire</li></a>
+            </ul>
+        </nav>
+    </header>
+        
+    </header>
+        <section>
+            <div class="thumbnail_box">
+               <div class="thumbnail t1"><p>Entei Ryu</p></div>
+               <div class="thumbnail t2"><p>Red Hong</p></div>
+               <div class="thumbnail t3"><p>huihuabiji</p></div>
+            </div>
+        </section>
+        <div class="clear"></div>
+        <footer>
+            <p>2024 MinChanKim Drawings All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinChanKim</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    #wrap {
+        position: relative;
+        width: 100%;
+        height: 900px;
+        z-index: '999';
+        text-align: center;
+    }
+    body  {
+        font-family: "Pretendard Variable", Pretendard;
+        width: 100%;
+    }
+    .clear {
+        clear: both;
+    } 
+    header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 135px;
+        background-color: black;
+        text-align: center;
+        z-index: 1000;
+    }
+    header .logo{
+        position: absolute;
+        display: flex;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 200px;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+    nav {
+        position : absolute;
+        top: 63%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    nav ul {
+        list-style-type: none;
+    }
+    nav li {
+    font-weight: 100;
+        display: inline-block;
+        color: white;
+        padding: 15px;
+    }
+    section {
+        position:relative;
+        width: 100%;
+        height: 900px;
+        margin-top: 1100px;
+    }
+    .thumbnail_box {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .thumbnail {
+        position: relative;
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background-color: black;
+        margin: 0 50px 0 20px
+    }
+    .thumbnail p{
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       font-size: 3rem;
+       font-weight: 200;
+       color: white;
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    footer p {
+        color: gray;
+        padding: 10px;
+    }
+</style>
+</head>
+<body> 
+    <div id="wrap">
+    <header>
+        <div class="logo"><a href='index.html'><img src='./img/logo.png' width='200'></a></div>
+        <nav>
+            <ul>
+                <a href='./Intro.html'><li>Intro</li></a>
+                <a href='./Style.html'><li>Style</li></a>
+                <a href='./Doodle.html'><li>Doodle</li></a>
+                <a href='./Anatomy.html'><li>Anatomy</li></a>
+                <a href='./Inspire.html'><li>Inspire</li></a>
+            </ul>
+        </nav>
+    </header>
+        
+    </header>
+        <section>
+            <div class="thumbnail_box">
+                <img src='./img/anatomy_all.png' width='4096' height='2870'>
+            </div>
+        </section>
+        <div class="clear"></div>
+        <footer>
+            <p>2024 MinChanKim Drawings All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
